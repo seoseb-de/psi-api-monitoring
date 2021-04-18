@@ -84,3 +84,36 @@ function addRow(url, mobile) {
       ])
   }
 }
+
+
+/** URLs per project instead of 
+* var pageSpeedMonitorUrls = []; 
+*/
+var urlsProjekt1 = [ 
+  'www.projekt-1.de/url/a/',
+  'www.projekt-1.de/url/b/',
+  'www.projekt-1.de/url/c/'
+];
+var urlsProjekt2 = [ 
+  'www.projekt-2.de/url/a/',
+  'www.projekt-2.de/url/b/',
+  'www.projekt-2.de/url/c/'
+];
+var urlsProjekt3 = [ 
+  'www.projekt-3.de/url/a/',
+  'www.projekt-3.de/url/b/',
+  'www.projekt-3.de/url/c/'
+];
+
+/**
+ *  call monitoring function per project
+ */
+function monitorProjekt1 () {
+ monitor(urlsProjekt1);
+};
+function monitorProjekt() {
+ monitor(urlsProjekt2);
+};
+function monitorProjekt3 () {
+ monitor(urlsProjekt3);
+};
